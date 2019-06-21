@@ -1,0 +1,11 @@
+Usage:
+
+@Library('utils') _
+
+...
+...
+#in any of the steps, call below code
+
+NotifyMaxBuildSizeViaEmail {
+	MAX_BUILD_SIZE_IN_MB=133
+}
