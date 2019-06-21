@@ -1,12 +1,26 @@
 Usage:
 
+```
 @Library('utils') _
 
-...
-...
-#in any of the steps, call below code
+pipeline {
+    agent {
+        label 'master'
+    }
+ 
+    stages {
+        stage('stage0') {
+            steps {
+                NotifyMaxBuildSizeViaEmail(MAX_BUILD_SIZE_IN_MB:'133')
+            }
+        }
+    }
+    
 
-NotifyMaxBuildSizeViaEmail(MAX_BUILD_SIZE_IN_MB=133)
+ 
+}
+
+```
 
 
 #https://jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/
