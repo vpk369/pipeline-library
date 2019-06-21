@@ -6,6 +6,7 @@ Usage:
 ...
 #in any of the steps, call below code
 
-NotifyMaxBuildSizeViaEmail {
-	MAX_BUILD_SIZE_IN_MB=133
-}
+NotifyMaxBuildSizeViaEmail(MAX_BUILD_SIZE_IN_MB=133)
+
+
+#https://jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/
