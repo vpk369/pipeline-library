@@ -1,4 +1,18 @@
+
+Settings:
+--------
+
+manage jenkins > configure
+search for 'Global Pipeline Libraries'
+click on 'add'
+fill the values:
+  name: utils
+  Default version: master
+  check all 3 checkboxes.. load implicityley, allow default verison to be overriden, include @library change in job recent changes
+ Retrieval method: Modem SCM -- an fill values.. reopsitory is mandatory
+
 Usage:
+------
 
 ```
 @Library('utils') _
